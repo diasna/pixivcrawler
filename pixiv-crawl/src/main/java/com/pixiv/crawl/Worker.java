@@ -22,6 +22,7 @@ public class Worker implements Runnable {
 			Object[] foundList = node.evaluateXPath("//img");
 			String imgUrl = ((TagNode)foundList[0]).getAttributeByName("src");
 			Util.saveImage(imgUrl, "/Users/miku/Pictures/pixiv/"+memberId+"/"+imgId+".jpg", url);
+			System.err.println("Done ["+imgId+".jpg]");
 		} catch (ClientProtocolException e) {
 			System.err.println("Exception image ["+imgId+"]");
 			e.printStackTrace();
