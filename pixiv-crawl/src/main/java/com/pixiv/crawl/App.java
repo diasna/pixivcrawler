@@ -18,7 +18,7 @@ import org.htmlcleaner.XPatherException;
 public class App {
 	public static void main(String[] args) throws XPatherException {
 		try {
-			String memberId = "4872213";
+			String memberId = "4872212";
 			String url = "http://www.pixiv.net/member_illust.php?id="+memberId;
 			TagNode initTagNode = Util.extractTagNode(url,"");
 			Object[] numObj = initTagNode.evaluateXPath("//div/span[@class='count-badge']");
